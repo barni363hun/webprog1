@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Input Form</title>
+  </head>
+  <style>
+    form{
+        width: max-content;
+    }
+    textarea{
+        margin-right: 50px;
+    }
+  </style>
+  <body>
+    <h1>User Input Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal Particular</legend>
+            <label for="name"> Name: <Input id="name" type="text"></Input></label>
+            <br>
+            <br>
+            <label for="pwd"> Password: <Input id="pwd" type="password"></Input></label>
+        <br><br>
+        Gender:
+        <label for="male">
+            <input type="radio" name="gen" id="male">
+            Male
+        </label>
+        <label for="female">
+            <input type="radio" name="gen" id="female">
+            Female
+        </label>
+        <br><br>
+        <label for="age"> Age: 
+            <select name="age" id="age">
+                <option selected value="&#60; 1 year old">&#60; 1 year old</option>
+            </select>
+        </label>
+        
+        </fieldset>
+        <fieldset>
+            <legend>Languages</legend>
+<input type="checkbox" name="lang" id="java">
+<label for="java">Java</label>
+<input type="checkbox" name="lang" id="C">
+<label for="C">C/C++</label>
+<input type="checkbox" name="lang" id="C#">
+<label for="java">C#</label>
+</fieldset>
+<fieldset>
+    <legend>Instructions</legend>
+    <textarea name="ins" id="ins" cols="30" rows="5" placeholder="Enter your instruction here..."></textarea>
+</fieldset>
+<input type="submit" value="SEND">
+<input type="reset" value="CLEAR">
+    </form>
+  </body>
+</html>
