@@ -1,6 +1,14 @@
 /* * {
   border: 1px solid green;
 } */
-h1{
-    color: red;
+h1 {
+  color: red;
+}
+#p1 {
+  background-color: black;
+  color: white;
+}
+.par {
+  background-color: green;
+  color: yellow;
 }
