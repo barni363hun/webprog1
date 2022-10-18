@@ -1,0 +1,43 @@
+body {
+  background-color: #8080ff;
+  font-family: "Garamond";
+}
+#foCim {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+#wrapper {
+  text-align: center;
+}
+#muveletekCim {
+  color: white;
+  font-size: 30px;
+}
+.menugomb {
+  border-radius: 20px;
+  width: 120px;
+  height: 120px;
+}
+.gombCim {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+.muveletekgombDIV {
+  display: inline-block;
+  margin-right: 50px;
+  padding: 10px;
+  height: 200px;
+}
+.muveletekgombDIV:hover {
+  cursor: pointer;
+  background-color: #ccccff;
+  border-radius: 20px;
+}
+.muveletekgombDIV:hover > .gombCim {
+  color: #8080ff;
+  background-color: white;
+  border-radius: 20px;
+}
