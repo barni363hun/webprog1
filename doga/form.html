@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Űrlap</title>
+  </head>
+  <body>
+    <style>
+      .urlap {
+        width: 600px;
+      }
+    </style>
+    <div class="urlap">
+      <h1>Ice Cream Order Form</h1>
+      <label for="email"
+        >Email:
+
+        <input
+          type="email"
+          name="email"
+          id="email"
+          value="ndunn@webucator.com"
+        />
+      </label>
+      <br />
+      <label for="pwd">
+        Password:
+        <input type="password" value="••••••" name="pwd" id="pwd" />
+      </label>
+      <br />
+      <label for="fla">
+        Flavor:
+        <select name="fla" id="fla">
+          <option value="cho">Chocolate</option>
+        </select></label
+      >
+      <br />
+      Toppings:
+      <input type="checkbox" checked name="spr" id="spr" />
+      <label for="spr">Sprinkles</label>
+      <input type="checkbox" name="nt" id="nt" />
+      <label for="nt">Nuts</label>
+      <input type="checkbox" checked name="wc" id="wc" />
+      <label for="wc">Whipped Cream</label>
+      <br />
+      Cup or Cone?
+      <input type="radio" name="cc" id="cu" />
+      <label for="cu">Cup</label>
+      <input type="radio" name="cc" id="pc" />
+      <label for="pc">Plain cone</label>
+      <input type="radio" name="cc" id="sc" />
+      <label for="sc">Sugar cone</label>
+      <input type="radio" checked name="cc" id="wc" />
+      <label for="wc">Waffle cone</label>
+      <br />
+      Special Requests:
+      <br />
+      <textarea autofocus name="req" id="req" cols="50" rows="10">
+I want a really big cone!</textarea
+      >
+      <br />
+      <input type="submit" value="Place Order" />
+      <button type="reset">Reset Form</button>
+    </div>
+  </body>
+</html>

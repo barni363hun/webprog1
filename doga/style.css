@@ -43,3 +43,7 @@ body {
   background-color: #0066cc;
   color: white;
 }
+#menu > a:first-child {
+  border-right: 1px solid black;
+  padding-right: 4px;
+}
