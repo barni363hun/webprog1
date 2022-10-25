@@ -13,7 +13,7 @@ body {
   padding: 20px;
 }
 #focim {
-  display: inline-block; /*ez így jó?*/
+  display: inline-block;
   padding: 10px;
   font-size: 30px;
   border-radius: 7px;
