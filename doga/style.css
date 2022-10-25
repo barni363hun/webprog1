@@ -13,7 +13,7 @@ body {
   padding: 20px;
 }
 #focim {
-  display: block; /*ez így jó?*/
+  display: inline-block; /*ez így jó?*/
   padding: 10px;
   font-size: 30px;
   border-radius: 7px;
@@ -35,4 +35,7 @@ body {
 #tartalom {
   padding: 10px;
   margin-top: 30px;
+  text-align: justify;
+  border: 1px solid #0066cc;
+  border-radius: 7px;
 }
