@@ -39,3 +39,7 @@ body {
   border: 1px solid #0066cc;
   border-radius: 7px;
 }
+#tartalom:hover {
+  background-color: #0066cc;
+  color: white;
+}
