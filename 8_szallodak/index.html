@@ -76,34 +76,11 @@
   </body>
   <script>
     function t(event) {
-      switch (event.target.className) {
-        case "b 1p":
-          console.log("1p");
-          break;
-        case "b 2p":
-          console.log("2p");
-          break;
-        case "b 3p":
-          console.log("3p");
-          break;
-        case "b 4p":
-          console.log("4p");
-          break;
-        case "b 1m":
-          console.log("1m");
-          break;
-        case "b 2m":
-          console.log("2m");
-          break;
-        case "b 3m":
-          console.log("3m");
-          break;
-        case "b 4m":
-          console.log("4m");
-          break;
-        default:
-          break;
-      }
+      const cn = event.target.className;
+      const type = String(cn).charAt(3);
+      const num = String(cn).charAt(2);
+      const db = document.getElementsByClassName("db" + num);
+      console.log(db);
     }
   </script>
 </html>
