@@ -21,24 +21,89 @@
     ></script>
   </head>
   <body>
-    <div class="container">
-      <div class="row align-items-end">
-        <div class="col-3">
-          <img src="./HistoriaMalomkert.jpg" alt="HistoriaMalomkert" />
-        </div>
-
-        <div class="col-3">
-          <img src="./VillaMedici.jpg" alt="VillaMedici" />
-        </div>
-
-        <div class="col-3">
-          <img src="./Betekincs.jpg" alt="Betekincs" />
-        </div>
-
-        <div class="col-3">
-          <img src="./Lillafüred.jpg" alt="Lillafüred" />
+    <div class="my_cont">
+      <div class="container">
+        <div class="row align-items-end">
+          <div class="my_col col-3">
+            <img src="./HistoriaMalomkert.jpg" alt="HistoriaMalomkert" />
+            <p class="name name1">HistoriaMalomkert - 110 000Ft</p>
+            <button class="b 1p" onclick="t(event)">+</button>
+            <button class="b 1m" onclick="t(event)">-</button>
+          </div>
+          <div class="my_col col-3">
+            <img src="./VillaMedici.jpg" alt="VillaMedici" />
+            <p class="name name2">VillaMedici - 279 000Ft</p>
+            <button class="b 2p" onclick="t(event)">+</button>
+            <button class="b 2m" onclick="t(event)">-</button>
+          </div>
+          <div class="my_col col-3">
+            <img src="./Betekincs.jpg" alt="Betekincs" />
+            <p class="name name3">Betekincs - 169 000Ft</p>
+            <button class="b 3p" onclick="t(event)">+</button>
+            <button class="b 3m" onclick="t(event)">-</button>
+          </div>
+          <div class="my_col col-3">
+            <img src="./Lillafüred.jpg" alt="Lillafüred" />
+            <p class="name name3">Lillafüred - 242 000Ft</p>
+            <button class="b 4p" onclick="t(event)">+</button>
+            <button class="b 4m" onclick="t(event)">-</button>
+          </div>
         </div>
       </div>
+      <p class="cart">A kosár értéke: 0 Ft</p>
+      <br />
+      <table>
+        <tr>
+          <td><p class="me-3">HistoriaMalomkert</p></td>
+          <td><p class="db1">0 db</p></td>
+        </tr>
+        <tr>
+          <td><p>VillaMedici</p></td>
+          <td><p class="db2">0 db</p></td>
+        </tr>
+        <tr>
+          <td><p>Betekincs</p></td>
+          <td><p class="db3">0 db</p></td>
+        </tr>
+        <tr>
+          <td><p>Lillafüred</p></td>
+          <td><p class="db4">0 db</p></td>
+        </tr>
+      </table>
+      <p class="money">Egyenleg: 500000 Ft</p>
+      <button class="bb">kedvezmény</button>
     </div>
   </body>
+  <script>
+    function t(event) {
+      switch (event.target.className) {
+        case "b 1p":
+          console.log("1p");
+          break;
+        case "b 2p":
+          console.log("2p");
+          break;
+        case "b 3p":
+          console.log("3p");
+          break;
+        case "b 4p":
+          console.log("4p");
+          break;
+        case "b 1m":
+          console.log("1m");
+          break;
+        case "b 2m":
+          console.log("2m");
+          break;
+        case "b 3m":
+          console.log("3m");
+          break;
+        case "b 4m":
+          console.log("4m");
+          break;
+        default:
+          break;
+      }
+    }
+  </script>
 </html>

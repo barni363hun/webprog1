@@ -1,7 +1,35 @@
+body {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
 img {
   width: 100%;
   border: 1px solid red;
 }
 .container {
   margin-top: 20px;
+}
+.name {
+  font-size: 1vw;
+}
+.my_col {
+  /* border: 1px solid green; */
+  text-align: center;
+  color: blue;
+}
+.b {
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+}
+.cart {
+  margin-left: 50px;
+}
+.bb {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.my_cont {
+  margin: 20px;
 }
