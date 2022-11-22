@@ -75,12 +75,24 @@
     </div>
   </body>
   <script>
+    var dbs = [0, 0, 0, 0];
     function t(event) {
       const cn = event.target.className;
       const type = String(cn).charAt(3);
       const num = String(cn).charAt(2);
-      const db = document.getElementsByClassName("db" + num);
-      console.log(db);
+      const db = document.getElementsByClassName("db" + num)[0];
+      const numi = Number(num) - 1;
+      if (type == "p") {
+        //console.log("+");
+        dbs[numi]++;
+      } else if (type == "m") {
+        //console.log("-");
+        dbs[numi]--;
+      }
+      //console.log(dbs[numi]);
+      db.innerHTML = dbs[numi] + " db";
+
+      //console.log(db);
     }
   </script>
 </html>
