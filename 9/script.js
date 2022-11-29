@@ -15,3 +15,31 @@ function Beker() {
   }
   document.getElementById("eredmeny").innerHTML = osszeg;
 }
+var kosarErteke = 0;
+
+function kosarhozAd(name) {
+  if (name == "solo") {
+    kosarErteke += 3000;
+  } else if (name == "alien") {
+    kosarErteke += 2000;
+  } else if (name == "predator") {
+    kosarErteke += 4000;
+  } else if (name == "einstein") {
+    kosarErteke += 5000;
+  }
+  document.getElementById("kosarErteke").innerHTML =
+    "Kosár értéke: " + kosarErteke + " Ft";
+}
+function kosarbolElvesz(name) {
+  if (name == "solo" && kosarErteke >= 3000) {
+    kosarErteke -= 3000;
+  } else if (name == "alien" && kosarErteke >= 2000) {
+    kosarErteke -= 2000;
+  } else if (name == "predator" && kosarErteke >= 4000) {
+    kosarErteke -= 4000;
+  } else if (name == "einstein" && kosarErteke >= 5000) {
+    kosarErteke -= 5000;
+  }
+  document.getElementById("kosarErteke").innerHTML =
+    "Kosár értéke: " + kosarErteke + " Ft";
+}

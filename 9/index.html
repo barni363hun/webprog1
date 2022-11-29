@@ -6,10 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Array</title>
     <script src="script.js"></script>
+    <style>
+      figcaption {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <h2>1. feladat</h2>
     <input type="button" value="bekér" onclick="Beker()" />
     <p id="eredmeny"></p>
+    <h2>2. feladat</h2>
+    <table>
+      <tr>
+        <td>
+          <img src="solo.jpg" alt="" srcset="" />
+          <figure>
+            <p id="felirat">Solo - 3000 Ft</p>
+            <br />
+            <input
+              type="button"
+              value="-"
+              onclick="kosarbolElvesz(this.name)"
+              name="solo"
+            />
+            <input
+              type="button"
+              value="+"
+              onclick="kosarhozAd(this.name)"
+              name="solo"
+            />
+          </figure>
+        </td>
+        <td>
+          <img src="aliens.jpg" alt="" srcset="" />
+          <figure>
+            <p id="felirat">Alien - 2000 Ft</p>
+            <br />
+            <input
+              type="button"
+              value="-"
+              onclick="kosarbolElvesz(this.name)"
+              name="alien"
+            />
+            <input
+              type="button"
+              value="+"
+              onclick="kosarhozAd(this.name)"
+              name="alien"
+            />
+          </figure>
+        </td>
+        <td>
+          <img src="predator.jpg" alt="" srcset="" />
+          <figure>
+            <p id="felirat">Predator - 4000 Ft</p>
+            <br />
+            <input
+              type="button"
+              value="-"
+              onclick="kosarbolElvesz(this.name)"
+              name="predator"
+            />
+            <input
+              type="button"
+              value="+"
+              onclick="kosarhozAd(this.name)"
+              name="predator"
+            />
+          </figure>
+        </td>
+        <td>
+          <img src="einstein.jpg" alt="" srcset="" />
+          <figure>
+            <p id="felirat">Einstein - 5000 Ft</p>
+            <br />
+            <input
+              type="button"
+              value="-"
+              onclick="kosarbolElvesz(this.name)"
+              name="einstein"
+            />
+            <input
+              type="button"
+              value="+"
+              onclick="kosarhozAd(this.name)"
+              name="einstein"
+            />
+          </figure>
+        </td>
+      </tr>
+    </table>
+    <p id="kosarErteke">Kosár értéke: 0 Ft</p>
   </body>
 </html>
