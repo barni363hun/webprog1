@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kávék</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table id="t1">
+        <tr>
+            <td class="termek">
+                <img src="cappuccino.png" alt="" srcset="">
+                <p>
+                    Cappuccino kapszula - 1600 Ft
+                </p>
+                <input
+              type="button"
+              value="-"
+              onclick="kosarbolElvesz(this.name)"
+              name="cappuccino"
+            />
+            <input
+              type="button"
+              value="+"
+              onclick="kosarhozAd(this.name)"
+              name="cappuccino"
+            />
+            </td>
+            <td class="termek">
+                <img src="espresso.png" alt="" srcset="">
+                <p>
+                    Espresso kapszula - 1500 Ft
+                </p>
+                <input
+              type="button"
+              value="-"
+              onclick="kosarbolElvesz(this.name)"
+              name="espresso"
+            />
+            <input
+              type="button"
+              value="+"
+              onclick="kosarhozAd(this.name)"
+              name="espresso"
+            />
+            </td>
+            <td class="termek">
+                <img src="latte.png" alt="" srcset="">
+                <p>
+                    Latte Macchiato Caramel kapszula - 2000 Ft
+                </p>
+                <input
+              type="button"
+              value="-"
+              onclick="kosarbolElvesz(this.name)"
+              name="latte"
+            />
+            <input
+              type="button"
+              value="+"
+              onclick="kosarhozAd(this.name)"
+              name="latte"
+            />
+            </td>
+            <td class="termek">
+                <img src="lungo.png" alt="" srcset="">
+                <p>
+                    Lungo kapszula - 2200 Ft
+                </p>
+                <input
+              type="button"
+              value="-"
+              onclick="kosarbolElvesz(this.name)"
+              name="lungo"
+            />
+            <input
+              type="button"
+              value="+"
+              onclick="kosarhozAd(this.name)"
+              name="lungo"
+            />
+            </td>
+        </tr>
+    </table>
+    <p id="kosarErteke">Kosár értéke: 0 Ft</p>
+    <table>
+        <tr>
+            <td>Cappuccino:</td>
+            <td>0 db</td>
+        </tr>
+    </table>
+</body>
+<script src="script.js"></script>
+</html>
