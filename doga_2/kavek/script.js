@@ -8,12 +8,21 @@ var db = {
 }
 
 var raktar = {
-    "cappuccino":1,
+    "cappuccino":10,
     "espresso":5,
     "latte":7,
     "lungo":3
 }
+var ked = 0
 
+function kedvezmeny(){
+    ked = (Math.random()*100).toFixed(2);
+    document.getElementById("kedvezmeny").innerHTML = "Kedvezmény: "+ ked + "%"
+    document.getElementById("kedvezmenyAr").innerHTML = "Kedvezményes ár: "+ (kosarErteke - Math.round(Number(ked)*0.01*kosarErteke)) + " Ft"
+    console.log((kosarErteke - Math.round(Number(ked)*0.01*kosarErteke)))
+    console.log((kosarErteke ))
+    console.log(Math.round(Number(ked)*0.01*kosarErteke))
+}
 
 function kosarhozAd(name) {
     
@@ -37,8 +46,8 @@ function kosarhozAd(name) {
         db["lungo"]++;
         raktar["lungo"]--;
     }
-
-
+    document.getElementById("kedvezmenyAr").innerHTML = "Kedvezményes ár: "+ (kosarErteke - Math.round(Number(ked)*0.01*kosarErteke)) + " Ft"
+    
     document.getElementById("cappuccino").innerHTML = db["cappuccino"] + " db"
     document.getElementById("espresso").innerHTML = db["espresso"] + " db"
     document.getElementById("latte").innerHTML = db["latte"] + " db"
@@ -83,6 +92,8 @@ function kosarbolElvesz(name) {
         }
         alert("Minden "+text + " csomagot eltávolított a kosárból.")
     }
+    document.getElementById("kedvezmenyAr").innerHTML = "Kedvezményes ár: "+ (kosarErteke - Math.round(Number(ked)*0.01*kosarErteke)) + " Ft"
+    
     document.getElementById("cappuccino").innerHTML = db["cappuccino"] + " db"
     document.getElementById("espresso").innerHTML = db["espresso"] + " db"
     document.getElementById("latte").innerHTML = db["latte"] + " db"
