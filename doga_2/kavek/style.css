@@ -6,3 +6,6 @@
   /* border: 1px solid green; */
   margin: auto;
 }
+#t2, #t2 td{
+  border: 1px solid black;
+}
