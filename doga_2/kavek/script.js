@@ -16,6 +16,10 @@ var raktar = {
 
 
 function kosarhozAd(name) {
+    
+    if (raktar[name] == 0) {
+        alert("A termék elfogyott.")
+    }
     if (name == "cappuccino" && raktar[name]>0) {
         kosarErteke += 1600;
         db["cappuccino"]++;
@@ -34,9 +38,6 @@ function kosarhozAd(name) {
         raktar["lungo"]--;
     }
 
-    if (raktar[name] == 0) {
-        alert("A termék elfogyott.")
-    }
 
     document.getElementById("cappuccino").innerHTML = db["cappuccino"] + " db"
     document.getElementById("espresso").innerHTML = db["espresso"] + " db"
